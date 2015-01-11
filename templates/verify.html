@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <title>LUCKY 大转盘</title>
+</head>
+<body>
+<style type="text/css">
+body{background:url(images/bg.png) 0 0 repeat;}
+.rotate-con-pan{background:url(images/dropkick.jpg) no-repeat 0 0;background-size:100% 100%;position:relative;width:240px;height:240px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;margin:0 auto}
+</style>
+<div class="container">
+    <div class="rotate-con-pan">
+		<div class="rotate-con-zhen"></div>
+	</div>
+    <h3>请输入手机号码:</h3>
+
+    <form action="/reward/verify" method="get">
+      <div class="input-group">
+      <input type="text" id="phone" name="phone" class="form-control">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">验证</button>
+      </span>
+    </div><!-- /input-group -->
+    </form>
+    <h5>如不是会员，请<a href="http://www.byhui.com.cn/Register.php">点击注册</a></h5>
+</div>
+
+</body>
+</html>
